@@ -38,7 +38,7 @@ namespace ListEditApp.ViewModels
                 .SetValidateAttribute(() => this.Name)
                 .AddTo(this.Disposable);
             this.CommitAsObservable
-                .SelectMany(this.Name)
+                .Select(_ => this.Name.Value)
                 .Subscribe(x => this.Model.Name = x)
                 .AddTo(this.Disposable);
         }
