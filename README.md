@@ -1,0 +1,3 @@
+# リスト編集サンプルプログラム
+
+ReactivePropertyとPrism.Wpfを使ったListの項目を編集するプログラムのサンプルです。
